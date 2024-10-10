@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -39,7 +39,13 @@ test:
 
 about:
   summary: Deploy your AI/ML model to Amazon SageMaker for Real-Time Inference and Batch Transform using your own Docker container image.
+  description: |
+    inference-server is a Python library to deploy an AI/ML model to Amazon SageMaker for real-time inference. 
+    The library simplifies deploying a model using your own Docker container image.
   home: https://github.com/jpmorganchase/inference-server
+  dev_url: https://github.com/jpmorganchase/inference-server
+  doc_url: https://inference-server.readthedocs.io
+  doc_source_url: https://github.com/jpmorganchase/inference-server/blob/main/docs/index.rst
   license: Apache-2.0
   license_file: LICENSE
 
